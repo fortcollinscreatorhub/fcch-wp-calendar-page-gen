@@ -1,0 +1,32 @@
+{
+    "all": {
+        "title": "All Reservations",
+        "pagenum_WEEK": 3008,
+        "pagenum_AGENDA": 3010
+    },
+    "11-lasers": {
+        "title": "LASER Reservations",
+        "pagenum_WEEK": 2003,
+        "pagenum_AGENDA": 2012
+    },
+    "11-metal": {
+        "title": "Metal Shop Reservations",
+        "pagenum_WEEK": 9418,
+        "pagenum_AGENDA": 9417
+    },
+    "12-all": {
+        "title": "Unit 12 Reservations",
+        "pagenum_WEEK": 3000,
+        "pagenum_AGENDA": 3002
+    },
+    "14-all": {
+        "title": "Unit 14 Reservations",
+        "pagenum_WEEK": 2014,
+        "pagenum_AGENDA": 2016
+    },
+    "15-all": {
+        "title": "Wood Shop Reservations",
+        "pagenum_WEEK": 3004,
+        "pagenum_AGENDA": 3006
+    }
+}
