@@ -1,0 +1,204 @@
+[
+    {
+        "pagenum": 3008,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "All Reservations - WEEK",
+                "mode": "WEEK",
+                "tags": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 3010,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "All Reservations - AGENDA",
+                "mode": "AGENDA",
+                "tags": [
+                    "all"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 2003,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "LASER Reservations - WEEK",
+                "mode": "WEEK",
+                "tags": [
+                    "11-lasers"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 2012,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "LASER Reservations - AGENDA",
+                "mode": "AGENDA",
+                "tags": [
+                    "11-lasers"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 9418,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Metal Shop Reservations - WEEK",
+                "mode": "WEEK",
+                "tags": [
+                    "11-metal"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 9417,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Metal Shop Reservations - AGENDA",
+                "mode": "AGENDA",
+                "tags": [
+                    "11-metal"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 3000,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Unit 12 Reservations - WEEK",
+                "mode": "WEEK",
+                "tags": [
+                    "12-all"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 3002,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Unit 12 Reservations - AGENDA",
+                "mode": "AGENDA",
+                "tags": [
+                    "12-all"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 2014,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Unit 14 Reservations - WEEK",
+                "mode": "WEEK",
+                "tags": [
+                    "14-all"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 2016,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Unit 14 Reservations - AGENDA",
+                "mode": "AGENDA",
+                "tags": [
+                    "14-all"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 3004,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Wood Shop Unit 15 Reservations - WEEK",
+                "mode": "WEEK",
+                "tags": [
+                    "15-all"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 3006,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Wood Shop Unit 15 Reservations - AGENDA",
+                "mode": "AGENDA",
+                "tags": [
+                    "15-all"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 12297,
+        "style": "reservations",
+        "calendars": [
+            {
+                "title": "Unit 11 LASER Area Reservations",
+                "mode": "WEEK",
+                "anchor": "calendar_unit11_laser",
+                "tags": [
+                    "11-lasers"
+                ]
+            },
+            {
+                "title": "Unit 11 Metal Shop, and Unit 15 Welding Reservations",
+                "mode": "WEEK",
+                "anchor": "calendar_unit11_metal_shop",
+                "tags": [
+                    "11-metal"
+                ]
+            },
+            {
+                "title": "Unit 15 Wood Shop, Wood CNC and Welding Reservations",
+                "mode": "WEEK",
+                "anchor": "calendar_unit15_wood_shop",
+                "tags": [
+                    "15-all"
+                ]
+            },
+            {
+                "title": "Unit 12 (Crafting, Workbenches, K40 LASER, Vacuum Former) Reservations",
+                "mode": "WEEK",
+                "anchor": "calendar_unit12",
+                "tags": [
+                    "12-all"
+                ]
+            },
+            {
+                "title": "Unit 14 (Electronics, Fiber Arts, Photo Studio, PCs, 3D Printing) Reservations",
+                "mode": "WEEK",
+                "anchor": "calendar_unit14",
+                "tags": [
+                    "14-all"
+                ]
+            }
+        ]
+    }
+]

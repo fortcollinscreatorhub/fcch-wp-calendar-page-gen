@@ -24,6 +24,7 @@
 import csv
 import json
 import os
+from pathlib import Path
 import subprocess
 import sys
 import urllib.parse
@@ -170,8 +171,9 @@ Brown & Neutral Hex Color Codes
 #EBD2BC
 """
 
+os.chdir(os.path.dirname(__file__))
+
 if True:
-  os.chdir(os.path.dirname(__file__))
   subprocess.check_call(['rsync', '-e', 'ssh', db_backup_host + ':' + db_backup_dir + db_backup_file_gz, '.'])
   subprocess.check_call(['rm', '-f', db_backup_file])
   subprocess.check_call(['gzip', '-d', db_backup_file_gz])
@@ -188,8 +190,8 @@ csv_data = l.split('),(')
 with open('cal_id_to_info.json', 'rt') as file:
   cal_id_to_info = json.loads(file.read())
 
-with open('tag_to_info.json', 'rt') as file:
-  tag_to_info = json.loads(file.read())
+with open('page_info.json', 'rt') as file:
+  page_infos = json.loads(file.read())
 
 def set_default(dict, key, val):
   dict[key] = dict.get(key, val)
@@ -224,36 +226,47 @@ for cal_id, info in cal_id_to_info.items():
 if todo:
   sys.exit(1)
 
-for tag, cal_ids in tag_to_cal_ids.items():
-  title = tag_to_info[tag]['title']
-  title_esc = urllib.parse.quote(title)
+iframe_tags = {
+  # width setting avoids an extra vertical scroll-bar
+  "signage": "<iframe style=\"border: solid 1px #777; position: absolute; left: 0vw; width: 99vw; top: 0vh; height: 99vh;\" frameborder=\"0\" scrolling=\"no\" src=\"",
+  "reservations": "<iframe style=\"border: solid 1px #777;\" width=\"800\" height=\"600\" frameborder=\"0\" scrolling=\"no\" src=\"",
+}
 
-  def gen(mode):
-    mode_esc = urllib.parse.quote(mode)
-    fn = 'wp-' + tag + '-' + mode + '.html'
-    with open(fn, 'wt') as file:
-      file.write(f"""\
-<!-- swarren: width setting avoids an extra vertical scroll-bar -->
-<iframe style="border: solid 1px #777; position: absolute; left: 0vw; width: 99vw; top: 0vh; height: 99vh;" frameborder="0" scrolling="no" src="
-https://calendar.google.com/calendar/embed?
-wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&showCalendars=0&showTz=0&showPrint=0&showTabs=0&
-mode={mode_esc}&
-title={title_esc}&
-""")
-      for cal_id in cal_ids:
-        cal_id_esc = urllib.parse.quote(cal_id)
-        color = cal_id_to_info[cal_id]['color']
-        color_esc = urllib.parse.quote(color)
-        file.write(f"""\
-src={cal_id_esc}&
-color={color_esc}&
-""")
-      file.write(f"""\
-"></iframe>
-""")
-    pagenum = tag_to_info[tag].get('pagenum_' + mode, None)
-    if pagenum is not None:
-      subprocess.check_call(['./wp-push-page.py', str(pagenum), fn])
+for page_info in page_infos:
+  pagenum = page_info['pagenum']
+  fn = 'wp-' + str(pagenum) + '.html'
 
-  gen('WEEK')
-  gen('AGENDA')
+  style = page_info['style']
+  iframe_tag = iframe_tags[style]
+
+  Path(fn).unlink(missing_ok=True)
+
+  with open(fn, 'wt') as file:
+    for calendar in page_info['calendars']:
+      title = calendar['title']
+      title_esc = urllib.parse.quote(title)
+
+      mode = calendar['mode']
+      mode_esc = urllib.parse.quote(mode)
+
+      anchor = calendar.get('anchor', None)
+      if anchor:
+        file.write(f"<a name=\"{anchor}\"></a>\n")
+
+      file.write(iframe_tag)
+      file.write("https://calendar.google.com/calendar/embed?")
+      file.write("wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&showCalendars=0&showTz=0&showPrint=0&showTabs=0&")
+      file.write(f"mode={mode_esc}&")
+      file.write(f"title={title_esc}&")
+
+      tags = calendar['tags']
+      for tag in tags:
+          cal_ids = tag_to_cal_ids.get(tag, [])
+          for cal_id in cal_ids:
+            cal_id_esc = urllib.parse.quote(cal_id)
+            color = cal_id_to_info[cal_id]['color']
+            color_esc = urllib.parse.quote(color)
+            file.write(f"src={cal_id_esc}&color={color_esc}&")
+      file.write("\"></iframe>\n")
+
+  subprocess.check_call(['./wp-push-page.py', str(pagenum), fn])
