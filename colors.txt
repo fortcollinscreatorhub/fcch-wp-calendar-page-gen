@@ -121,7 +121,7 @@ Blue Hex Color Codes
 
 Yellow Hex Color Codes
 #C56A1D used 15
-#D18623 used 15
+#D18623 used 11 WELDING
 #D3982F used 15
 #E8C539
 #F4D44E

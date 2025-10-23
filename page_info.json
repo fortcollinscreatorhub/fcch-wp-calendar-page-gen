@@ -30,10 +30,11 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "LASER Reservations - WEEK",
+                "title": "LASER & Metal Reservations - WEEK",
                 "mode": "WEEK",
                 "tags": [
-                    "11-lasers"
+                    "11-lasers",
+                    "11-metal"
                 ]
             }
         ]
@@ -43,10 +44,11 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "LASER Reservations - AGENDA",
+                "title": "LASER & Metal Reservations - AGENDA",
                 "mode": "AGENDA",
                 "tags": [
-                    "11-lasers"
+                    "11-lasers",
+                    "11-metal"
                 ]
             }
         ]
@@ -168,7 +170,7 @@
                 ]
             },
             {
-                "title": "Unit 11 Metal Shop, and Welding Reservations",
+                "title": "Unit 11 Metal Shop Reservations",
                 "mode": "WEEK",
                 "anchor": "calendar_unit11_metal_shop",
                 "tags": [
