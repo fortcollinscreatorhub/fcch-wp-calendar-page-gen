@@ -132,6 +132,32 @@
         ]
     },
     {
+        "pagenum": 2018,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Class Calendar - WEEK",
+                "mode": "WEEK",
+                "tags": [
+                    "classes"
+                ]
+            }
+        ]
+    },
+    {
+        "pagenum": 2044,
+        "style": "signage",
+        "calendars": [
+            {
+                "title": "Class Calendar - AGENDA",
+                "mode": "AGENDA",
+                "tags": [
+                    "classes"
+                ]
+            }
+        ]
+    },
+    {
         "pagenum": 12297,
         "style": "reservations",
         "calendars": [
