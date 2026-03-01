@@ -54,32 +54,6 @@
         ]
     },
     {
-        "pagenum": 9418,
-        "style": "signage",
-        "calendars": [
-            {
-                "title": "Metal Shop Reservations - WEEK",
-                "mode": "WEEK",
-                "tags": [
-                    "11-metal"
-                ]
-            }
-        ]
-    },
-    {
-        "pagenum": 9417,
-        "style": "signage",
-        "calendars": [
-            {
-                "title": "Metal Shop Reservations - AGENDA",
-                "mode": "AGENDA",
-                "tags": [
-                    "11-metal"
-                ]
-            }
-        ]
-    },
-    {
         "pagenum": 3000,
         "style": "signage",
         "calendars": [
