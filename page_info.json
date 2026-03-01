@@ -30,7 +30,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "LASER & Metal Reservations - Week",
+                "title": "Unit 11 Reservations - Week",
                 "mode": "WEEK",
                 "tags": [
                     "11-lasers",
@@ -44,7 +44,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "LASER & Metal Reservations - List",
+                "title": "Unit 11 Reservations - List",
                 "mode": "AGENDA",
                 "tags": [
                     "11-lasers",
@@ -110,7 +110,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Wood Shop Unit 15 Reservations - Week",
+                "title": "Unit 15 Reservations - Week",
                 "mode": "WEEK",
                 "tags": [
                     "15-all"
@@ -123,7 +123,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Wood Shop Unit 15 Reservations - List",
+                "title": "Unit 15 Reservations - List",
                 "mode": "AGENDA",
                 "tags": [
                     "15-all"
