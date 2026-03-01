@@ -4,7 +4,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "All Reservations - WEEK",
+                "title": "All Reservations - Week",
                 "mode": "WEEK",
                 "tags": [
                     "all"
@@ -17,7 +17,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "All Reservations - AGENDA",
+                "title": "All Reservations - List",
                 "mode": "AGENDA",
                 "tags": [
                     "all"
@@ -30,7 +30,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "LASER & Metal Reservations - WEEK",
+                "title": "LASER & Metal Reservations - Week",
                 "mode": "WEEK",
                 "tags": [
                     "11-lasers",
@@ -44,7 +44,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "LASER & Metal Reservations - AGENDA",
+                "title": "LASER & Metal Reservations - List",
                 "mode": "AGENDA",
                 "tags": [
                     "11-lasers",
@@ -58,7 +58,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Unit 12 Reservations - WEEK",
+                "title": "Unit 12 Reservations - Week",
                 "mode": "WEEK",
                 "tags": [
                     "12-all"
@@ -71,7 +71,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Unit 12 Reservations - AGENDA",
+                "title": "Unit 12 Reservations - List",
                 "mode": "AGENDA",
                 "tags": [
                     "12-all"
@@ -84,7 +84,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Unit 14 Reservations - WEEK",
+                "title": "Unit 14 Reservations - Week",
                 "mode": "WEEK",
                 "tags": [
                     "14-all"
@@ -97,7 +97,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Unit 14 Reservations - AGENDA",
+                "title": "Unit 14 Reservations - List",
                 "mode": "AGENDA",
                 "tags": [
                     "14-all"
@@ -110,7 +110,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Wood Shop Unit 15 Reservations - WEEK",
+                "title": "Wood Shop Unit 15 Reservations - Week",
                 "mode": "WEEK",
                 "tags": [
                     "15-all"
@@ -123,7 +123,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Wood Shop Unit 15 Reservations - AGENDA",
+                "title": "Wood Shop Unit 15 Reservations - List",
                 "mode": "AGENDA",
                 "tags": [
                     "15-all"
@@ -136,7 +136,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Class Calendar - WEEK",
+                "title": "Class Calendar - Week",
                 "mode": "WEEK",
                 "tags": [
                     "classes"
@@ -149,7 +149,7 @@
         "style": "signage",
         "calendars": [
             {
-                "title": "Class Calendar - AGENDA",
+                "title": "Class Calendar - List",
                 "mode": "AGENDA",
                 "tags": [
                     "classes"
