@@ -120,7 +120,7 @@ Blue Hex Color Codes
 #BBDAF2 used 15
 
 Yellow Hex Color Codes
-#C56A1D used 15
+#C56A1D
 #D18623 used 11 WELDING
 #D3982F used 15
 #E8C539
